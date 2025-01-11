@@ -10,14 +10,14 @@
     <title>Cartilha de Prevenção</title>
 </head>
 <body>
-    <header class="header-mobile">
+    <header>
         <img src="./assets/images/logo.svg" alt ="logo do site">
     
         <button>
             <img src="./assets/images/icon-menu.svg" alt="icone de menu">
         </button>
-    
-        <nav>
+
+        <nav class="mobile">
             <button>
                 <img src="./assets/images/icon-menu-close.svg" alt="icone de x para fechar o menu">
             </button>
@@ -28,11 +28,24 @@
             <a href="#">Contato</a>
 
         </nav>
+
+        <nav class="desktop">
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Pesquisas</a>
+            <a href="#">Contato</a>
+            
+        </nav>
+
     </header>
         
     <main>
         <section class="primeira-secao">
-            <img src="./assets/images/home.jpg" alt="homem segurando laço azul">
+            <picture>
+                <source media ="(min-width: 700px)" srcset="./assets/images/home.jpg">
+                <img src="./assets/images/home.jpg" alt="homem segurando laço azul">
+            </picture>
+            
             <h1> O Câncer de Próstata</h1>
             <p> O câncer é uma doença caracterizada pelo crescimento desordenado de células malignas, que podem se disseminar pelo organismo tornando-se agressivas e até mesmo incontroláveis.
                 O câncer na próstata, CaP, é a sexta neoplasia maligna mais comum no mundo e o mais frequente entre os homens.
